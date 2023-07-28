@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mavenproject
+  labels:
+    app: maven-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: maven-1
+  template:
+    metadata:
+      labels:
+        app: maven-1
+    spec:
+      containers:
+      - name: mavenproject
+        image: gbsartifactory.edst.ibm.com/jenkins-agents/mavenproject:62
+        ports:
+        - containerPort: 3020

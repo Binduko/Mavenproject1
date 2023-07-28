@@ -18,4 +18,4 @@ spec:
       - name: mavenproject
         image: gbsartifactory.edst.ibm.com/jenkins-agents/mavenproject:65
         ports:
-        - containerPort: 3020
+        - containerPort: 3050

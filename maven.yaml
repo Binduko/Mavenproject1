@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mavenproject
-        image: gbsartifactory.edst.ibm.com/jenkins-agents/mavenproject:68
+        image: gbsartifactory.edst.ibm.com/jenkins-agents/mavenproject1:68
         ports:
         - containerPort: 3050
